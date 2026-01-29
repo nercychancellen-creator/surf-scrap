@@ -1,0 +1,84 @@
+---
+title: "Mon Dashboard Surf"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    social: menu
+    source_code: embed
+    theme : united
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(DT)
+library(ggplot2)
+
+# Importation du fichier 
+df_raw <- read.csv("donnees_surf.csv", check.names = FALSE,fileEncoding = "UTF-8")
+
+# Traitement spécifique de tes données [cite: 1, 2, 3]
+df_clean <- df_raw %>%
+  setNames(c("id", "full_date", "waves_size", "wind_speed", "wind_direction")) %>%
+  mutate(
+    # On nettoie la date pour ne garder que le Jour et l'Heure proprement 
+    day_hour = str_replace_all(full_date, "[\r\n]+", " "), 
+    day_hour = str_trim(str_replace(day_hour, " [0-9]$", "")),
+    
+    # Calcul de la taille moyenne des vagues 
+    wave_min = as.numeric(str_extract(waves_size, "^[0-9.]+")),
+    wave_max = as.numeric(str_extract(waves_size, "[0-9.]+$")),
+    wave_mean = (wave_min + wave_max) / 2,
+    
+    # Nettoyage du vent (extraction du chiffre) 
+    wind_num = as.numeric(str_extract(wind_speed, "[0-9]+")),
+    
+    # Vérification du vent du Nord (critère école) [cite: 2]
+    is_north = str_detect(wind_direction, "Nord"),
+    
+    # Calcul du score de qualité [cite: 2]
+    quality_score = case_when(
+      is_north & wave_mean >= 1.0 ~ 100,
+      is_north | wave_mean >= 1.5 ~ 60,
+      TRUE ~ 20
+    )
+  )
+
+# Sélection du meilleur créneau 
+best_moment <- df_clean %>% arrange(desc(quality_score), desc(wave_mean)) %>% slice(1)
+```
+Row {data-height=150}
+-------------------------------------------------------------------------------------------
+```{r 1}
+valueBox(best_moment$day_hour, icon = "fa-calendar-check", color = "success")
+```
+```{r 2}
+vague_max = max(df_clean$wave_max, na.rm = TRUE)
+valueBox(paste(vague_max, "m"), icon = "fa-water", color = "info")
+```
+```{r 3}
+gauge(best_moment$quality_score, min = 0, max = 100, symbol = '%', gaugeSectors(
+  success = c(70, 100), warning = c(40, 69), danger = c(0, 39)
+))
+```
+Row {data-height=400}
+-------------------------------------------------------------------------------------------
+```{r 4}
+ggplot(df_clean, aes(x = id, y = wave_mean)) +
+  geom_line(color = "#2980b9", size = 1) +
+  geom_area(fill = "#3498db", alpha = 0.4) +
+  theme_minimal() +
+  labs(x = "Évolution temporelle", y = "Taille moyenne (m)")
+```
+```{r 5}
+ggplot(df_clean, aes(x = id, y = wind_num)) +
+  geom_bar(stat = "identity", fill = "#e67e22") +
+  theme_minimal() +
+  labs(x = "Évolution temporelle", y = "Vitesse vent")
+```
+```{r 6}
+df_clean %>% 
+  select(day_hour, waves_size, wind_num, wind_direction) %>%
+  datatable(options = list(pageLength = 5),
+            colnames = c("Jour / Heure", "Taille Vagues", "Vitesse Vent", "Direction"))
+```

@@ -1,0 +1,339 @@
+,"day
+
+hour",waves_size,wind_speed,wind direction
+0,"Jeudi 29 Janvier
+
+06:00
+
+1",3.2-4.8,"
+16
+
+",Orientation vent Sud Sud Ouest
+1,"Jeudi 29 Janvier
+
+09:00
+
+2",3.2-4.8,"
+17
+
+",Orientation vent Sud Sud Est
+2,"Jeudi 29 Janvier
+
+12:00
+
+3",3.1-4.7,"
+30
+
+",Orientation vent Sud Sud Est
+3,"Jeudi 29 Janvier
+
+15:00
+
+4",3.4-5.1,"
+37
+
+",Orientation vent Ouest Sud Ouest
+4,"Jeudi 29 Janvier
+
+18:00
+
+5",3.5-5.2,"
+40
+
+",Orientation vent Ouest
+5,"Jeudi 29 Janvier
+
+21:00
+
+6",3.5-5.3,"
+39
+
+",Orientation vent Ouest Sud Ouest
+6,"Vendredi 30 Janvier
+
+06:00
+
+1",4.4-6.6,"
+44
+
+",Orientation vent Ouest
+7,"Vendredi 30 Janvier
+
+09:00
+
+2",4.2-6.3,"
+34
+
+",Orientation vent Ouest Sud Ouest
+8,"Vendredi 30 Janvier
+
+12:00
+
+3",4.2-6.3,"
+37
+
+",Orientation vent Sud Sud Ouest
+9,"Vendredi 30 Janvier
+
+15:00
+
+4",4.5-6.8,"
+42
+
+",Orientation vent Sud Ouest
+10,"Vendredi 30 Janvier
+
+18:00
+
+5",5.0-7.5,"
+37
+
+",Orientation vent Ouest Sud Ouest
+11,"Vendredi 30 Janvier
+
+21:00
+
+6",5.4-8.0,"
+42
+
+",Orientation vent Ouest Sud Ouest
+12,"Samedi 31 Janvier
+
+06:00
+
+1",5.6-8.4,"
+45
+
+",Orientation vent Ouest
+13,"Samedi 31 Janvier
+
+09:00
+
+2",5.9-8.8,"
+44
+
+",Orientation vent Ouest
+14,"Samedi 31 Janvier
+
+12:00
+
+3",6.1-9.2,"
+50
+
+",Orientation vent Ouest Nord Ouest
+15,"Samedi 31 Janvier
+
+15:00
+
+4",6.1-9.1,"
+48
+
+",Orientation vent Ouest Nord Ouest
+16,"Samedi 31 Janvier
+
+18:00
+
+5",5.8-8.7,"
+45
+
+",Orientation vent Ouest Nord Ouest
+17,"Samedi 31 Janvier
+
+21:00
+
+6",5.3-8.0,"
+36
+
+",Orientation vent Ouest Nord Ouest
+18,"Dimanche 1 Février
+
+06:00
+
+1",4.0-6.0,"
+38
+
+",Orientation vent Ouest
+19,"Dimanche 1 Février
+
+09:00
+
+2",3.7-5.5,"
+40
+
+",Orientation vent Ouest Sud Ouest
+20,"Dimanche 1 Février
+
+12:00
+
+3",3.4-5.1,"
+36
+
+",Orientation vent Sud Ouest
+21,"Dimanche 1 Février
+
+15:00
+
+4",3.2-4.7,"
+29
+
+",Orientation vent Sud Ouest
+22,"Dimanche 1 Février
+
+18:00
+
+5",2.9-4.3,"
+26
+
+",Orientation vent Ouest Sud Ouest
+23,"Dimanche 1 Février
+
+21:00
+
+6",2.6-4.0,"
+18
+
+",Orientation vent Sud Ouest
+24,"Lundi 2 Février
+
+06:00
+
+1",2.2-3.2,"
+28
+
+",Orientation vent Sud Est
+25,"Lundi 2 Février
+
+09:00
+
+2",2.1-3.1,"
+28
+
+",Orientation vent Sud Est
+26,"Lundi 2 Février
+
+12:00
+
+3",2.0-3.1,"
+32
+
+",Orientation vent Sud Sud Est
+27,"Lundi 2 Février
+
+15:00
+
+4",2.2-3.3,"
+46
+
+",Orientation vent Ouest Sud Ouest
+28,"Lundi 2 Février
+
+18:00
+
+5",2.5-3.8,"
+51
+
+",Orientation vent Ouest Sud Ouest
+29,"Lundi 2 Février
+
+21:00
+
+6",2.9-4.3,"
+36
+
+",Orientation vent Ouest Sud Ouest
+30,"Mardi 3 Février
+
+06:00
+
+1",2.4-3.6,"
+25
+
+",Orientation vent Sud Est
+31,"Mardi 3 Février
+
+09:00
+
+2",2.3-3.5,"
+23
+
+",Orientation vent Sud Est
+32,"Mardi 3 Février
+
+12:00
+
+3",2.3-3.4,"
+24
+
+",Orientation vent Sud Sud Est
+33,"Mardi 3 Février
+
+15:00
+
+4",2.4-3.5,"
+28
+
+",Orientation vent Sud
+34,"Mardi 3 Février
+
+18:00
+
+5",2.6-3.9,"
+21
+
+",Orientation vent Sud
+35,"Mardi 3 Février
+
+21:00
+
+6",2.8-4.3,"
+18
+
+",Orientation vent Sud Est
+36,"Mercredi 4 Février
+
+06:00
+
+1",3.0-4.4,"
+30
+
+",Orientation vent Sud Est
+37,"Mercredi 4 Février
+
+09:00
+
+2",3.1-4.6,"
+29
+
+",Orientation vent Sud Sud Est
+38,"Mercredi 4 Février
+
+12:00
+
+3",3.2-4.8,"
+34
+
+",Orientation vent Sud Sud Ouest
+39,"Mercredi 4 Février
+
+15:00
+
+4",3.2-4.7,"
+37
+
+",Orientation vent Sud Ouest
+40,"Mercredi 4 Février
+
+18:00
+
+5",3.1-4.6,"
+35
+
+",Orientation vent Sud Ouest
+41,"Mercredi 4 Février
+
+21:00
+
+6",2.9-4.4,"
+35
+
+",Orientation vent Ouest Sud Ouest

@@ -1,0 +1,2 @@
+[console_scripts]
+surf-scrap = surf_scrap:cli

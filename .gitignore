@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environnements
+.venv/
+venv/
+env/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Data & outputs
+*.csv
+*.html
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tests locaux
+test.py

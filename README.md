@@ -14,8 +14,8 @@ The library can be used either:
 
 Use pip to install the package:
 
-```bash
-pip install git+https://github.com/nercychancellen-creator/surf-scrap.git
+```bash 
+pip install surf-scrap
 ```
 
 
